@@ -42,7 +42,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: akri-video-streaming-app
-  namespace: akridemo
+  namespace: default
   labels:
     app: akri-video-streaming-app
 spec:
@@ -79,4 +79,4 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: akri-video-streaming-app-sa
-    namespace: akridemo
+    namespace: default
